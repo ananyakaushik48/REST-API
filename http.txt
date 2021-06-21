@@ -1,0 +1,48 @@
+The HTTP Cheat Sheet
+
+HTTP header field
+GENERAL:
+-Request URL 
+-Request Method
+-Status Code
+-Remote Address
+-Referrer Policy
+
+RESPONSE:
+-Server
+-Set-cookie = Helps server send small pieces of data called cookies from svr to cli
+-Content-Type = specifies content(html, pdf, txt...)
+-Content-Length
+-Date
+
+REQUEST:
+-Cookies = Return the cookie data sent back to the server
+-Accept-xxx = accept langu charset and coding(diff kinda encoding)
+-Content-Type = set up the kind of data being sent like json or jwt
+-Content-Length
+-Authorisation = some type of token to validate users to protect page/server
+-User-Agent = software the user has and other such information
+-Referrer = contains info links and stuff like that on a page
+
+MOST IMPORTANT HEADERS:
+Status Codes:
+The range for status codes are as follows
+1xx: (100) 
+These are all informational: Request Received/Processing
+2xx:
+These indicate success ie, Received, understood and accepted
+3xx:
+Further action must be taken/ redirection
+4xx:
+Request doesnt have what the server needs(client side error)
+5xx:
+Server failed to fulfill an apparent valid request(server side failure codes) \
+Some Important HTTP Codes:
+200-OK
+201-Ok Created
+301-Moved to another/ new URL
+304-Not modified(cached version)
+400-Bad/Faulty Request
+401-Unauthorised
+404-Resource not found 
+500-Internal server error
